@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  z-index: 100;
+  width: -webkit-fill-available;
+  height: 60px;
+  padding: 20px 20px;
+  justify-content: space-between;
+}
+
+.logo {
+ align-items: center;
+
+ img {
+  width: 55px;
+  height: auto;
+  background: transparent;
+ }
+}
+
+.user_menu {
+  justify-content: flex-end;
+}
