@@ -1,4 +1,7 @@
 import React from 'react'
+import LanguageIcon from '@mui/icons-material/Language';
+import MenuIcon from '@mui/icons-material/Menu';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 function Header() {
   return (
@@ -9,12 +12,14 @@ function Header() {
       </div>
 
       {/* RIGHT */}
-      <div className="user_menu">
+      <div className="user__menu">
         <div className="host__menu">
           <h3>Become a Host</h3>
+          <LanguageIcon fontSize="small" className="language__icon"/> 
         </div>
-        <div className="login_menu">
-
+        <div className="login__menu">
+          <MenuIcon fontSize="small" className="menu__icon"/>
+          <AccountCircleIcon className="account__icon"/>
         </div>
       </div>
     </header>

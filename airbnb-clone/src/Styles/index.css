@@ -22,10 +22,31 @@
   z-index: 100;
   width: -webkit-fill-available;
   height: 60px;
-  padding: 20px 20px;
+  padding: 20px 40px 20px 40px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (min-width: 1128px) {
+  .header {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+  }
+}
+
+@media (max-width: 744px) {
+  .header {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }
 
 .logo {
@@ -35,14 +56,77 @@
 }
 
 .logo img {
-  width: 55px;
+  width: 50px;
   height: auto;
   background: transparent;
 }
 
-.user_menu {
+.user__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.host__menu {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 16px;
+}
+
+.host__menu h3 {
+  font-size: 14px;
+  margin-right: 25px;
+}
+
+.language__icon {
+  font-size: 20px;
+}
+
+.login__menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid lightgrey;
+  background-color: #fff;
+  border-radius: 9999px;
+  padding: 7px 10px;
+}
+
+.menu__icon {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  padding-right: 9px;
+}
+
+.account__icon {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  padding-left: 3px;
+  margin-left: 2px;
+  color: #717171;
+}
+
+.top__searchbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 550px;
+  top: 0;
+  z-index: 1;
+  font-size: 14px;
+  color: #fff;
+  padding-top: 50px;
 }
 /*# sourceMappingURL=index.css.map */

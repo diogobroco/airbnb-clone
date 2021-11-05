@@ -1,3 +1,5 @@
+@import "../Variables/media";
+
 .header {
   display: flex;
   position: fixed;
@@ -6,20 +8,73 @@
   z-index: 100;
   width: -webkit-fill-available;
   height: 60px;
-  padding: 20px 20px;
+  padding: 20px 40px 20px 40px;
   justify-content: space-between;
+
+  @include media(">=desktop") {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+  }
+
+  @include media("<=tablet") {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+
+  @include media("<=phone") {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }
 
 .logo {
  align-items: center;
 
- img {
-  width: 55px;
-  height: auto;
-  background: transparent;
+  img {
+    width: 50px;
+    height: auto;
+    background: transparent;
  }
 }
 
-.user_menu {
+.user__menu {
+  display: flex;
   justify-content: flex-end;
+  align-items: center;
+}
+
+.host__menu {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+
+  h3 {
+    font-size: 14px;
+    margin-right: 25px;
+  }
+}
+
+.language__icon {
+  font-size: 20px;
+}
+
+.login__menu {
+  align-items: center;
+  border: 1px solid lightgrey;
+  background-color: #fff;
+  border-radius: 9999px;
+  padding: 7px 10px;
+}
+
+.menu__icon {
+  transform: scale(1);
+  padding-right: 9px;
+}
+
+.account__icon {
+  transform: scale(1.4);
+  padding-left: 3px;
+  margin-left: 2px;
+  color: #717171;
 }
