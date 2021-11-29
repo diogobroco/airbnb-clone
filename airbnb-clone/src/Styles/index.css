@@ -20,7 +20,7 @@
           align-items: center;
   top: 0;
   z-index: 100;
-  width: -webkit-fill-available;
+  width: 90%;
   height: 60px;
   padding: 20px 40px 20px 40px;
   -webkit-box-pack: justify;
@@ -53,6 +53,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .logo img {
@@ -85,12 +86,32 @@
 }
 
 .host__menu h3 {
-  font-size: 14px;
-  margin-right: 25px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.become__host {
+  margin-right: 26px;
+}
+
+.become__host:hover {
+  background-color: white;
+  opacity: 0.5;
+  border-radius: 9999px;
+  padding: 10px 9px;
+  color: black;
 }
 
 .language__icon {
   font-size: 20px;
+  cursor: pointer;
+}
+
+.language__icon:hover {
+  background-color: white;
+  opacity: 0.5;
+  border-radius: 50%;
+  padding: 5px;
 }
 
 .login__menu {
@@ -100,13 +121,14 @@
   border: 1px solid lightgrey;
   background-color: #fff;
   border-radius: 9999px;
-  padding: 7px 10px;
+  padding: 5px 10px;
 }
 
 .menu__icon {
   -webkit-transform: scale(1);
           transform: scale(1);
   padding-right: 9px;
+  cursor: pointer;
 }
 
 .account__icon {
@@ -115,18 +137,381 @@
   padding-left: 3px;
   margin-left: 2px;
   color: #717171;
+  cursor: pointer;
+}
+
+.mid__section {
+  padding-left: 24px;
+  padding-right: 24px;
+  left: 150px;
+  position: absolute;
+  text-align: left;
+  top: 13px;
+  width: 65%;
+  z-index: 101;
+}
+
+.mid__form {
+  padding-bottom: 16px;
+  z-index: 3;
+}
+
+@media (min-width: 745px) and (max-width: 935px) {
+  .mid__form {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    width: 65%;
+    font-weight: 500;
+  }
+}
+
+.search__form {
+  margin: 0 auto;
+  max-width: 850px;
 }
 
 .top__searchbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  left: 550px;
-  top: 0;
-  z-index: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
   font-size: 14px;
+  font-weight: 900;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fff;
-  padding-top: 50px;
+  font-weight: 600;
+}
+
+.search__places {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.search__places h4 {
+  font-weight: 600;
+}
+
+@media (min-width: 935px) and (max-width: 1130px) {
+  .search__places h4 {
+    font-weight: 500;
+    font-size: 13px;
+  }
+}
+
+.search__experiences {
+  padding-right: 20px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+
+.search__experiences h4 {
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.search__experiences h4:hover {
+  color: #c2c2c2;
+}
+
+@media (min-width: 935px) and (max-width: 1130px) {
+  .search__experiences h4 {
+    font-weight: 500;
+    font-size: 13px;
+  }
+}
+
+.search__online {
+  padding-right: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.search__online h4 {
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.search__online h4:hover {
+  color: #c2c2c2;
+}
+
+@media (min-width: 935px) and (max-width: 1130px) {
+  .search__online h4 {
+    font-weight: 500;
+    font-size: 13px;
+  }
+}
+
+.bottom__searchbar {
+  border: 1px solid #DDDDDD;
+  border-radius: 32px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 66px;
+  position: relative;
+  width: 100%;
+  -webkit-box-shadow: 0px 16px 32px black, 0px 3px 8px black;
+          box-shadow: 0px 16px 32px black, 0px 3px 8px black;
+}
+
+.form__searchbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+  min-width: 0px;
+  pointer-events: auto;
+}
+
+@media (min-width: 950px) {
+  .form__searchbar {
+    -webkit-box-flex: 1.5;
+        -ms-flex: 1.5 0 0%;
+            flex: 1.5 0 0%;
+  }
+}
+
+.search__location {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5 0 0%;
+          flex: 1.5 0 0%;
+}
+
+.search_location_form {
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+  margin: -1px;
+  min-width: 0px;
+}
+
+.search_location_query {
+  cursor: pointer;
+  display: block;
+  border: 1px solid transparent;
+  border-radius: 32px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+  min-width: 0px;
+  padding-bottom: 4px;
+}
+
+.search_location_box {
+  position: relative;
+  z-index: 1;
+  padding-left: 30px;
+  padding-top: 14px;
+}
+
+.search_location_text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding-bottom: 2px;
+}
+
+.search_location_input {
+  display: block;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #222222;
+  outline: none;
+}
+
+.search_horizontal_border {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-right: 1px solid #DDDDDD;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 0px;
+          flex: 0 0 0px;
+  height: 32px;
+}
+
+.form_search_checkin_checkout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0 0%;
+          flex: 2 0 0%;
+  min-width: 0px;
+}
+
+.search_checkin_box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+  margin: -1px;
+  min-width: 0px;
+  position: relative;
+}
+
+.search_checkin_info {
+  padding: 14px 24px;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 1;
+}
+
+.checkin_text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 800;
+  padding-bottom: 2px;
+}
+
+.checkin_dates {
+  font-size: 14px;
+  line-height: 18px;
+  color: #717171;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.search_checkout_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+  margin: -1px;
+  min-width: 0px;
+  position: relative;
+}
+
+.search_checkout_info {
+  padding: 14px 24px;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 1;
+}
+
+.checkout_text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 800;
+  padding-bottom: 2px;
+}
+
+.checkout_dates {
+  font-size: 14px;
+  line-height: 18px;
+  color: #717171;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.form_add_search_guests {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -1px;
+  min-width: 0px;
+  position: relative;
+  -webkit-box-flex: 0.95;
+      -ms-flex: 0.95 0 auto;
+          flex: 0.95 0 auto;
+}
+
+.search_add_guests {
+  padding: 14px 24px;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 1;
+}
+
+.search_icon_form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-left: -6px;
+  padding-right: 9px;
+  position: relative;
+  z-index: 5;
+}
+
+.search_icon_field {
+  background: #ff385c;
+  border: 0px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px;
+  outline: none;
+  overflow: hidden;
+  padding: 0px;
+  text-decoration: none;
+  border-radius: 24px;
+  height: 48px;
+  position: relative;
+  vertical-align: middle;
+  z-index: 0;
+}
+
+@media (min-width: 950px) {
+  .search_icon_field {
+    max-width: 200px;
+    -webkit-transition: none 0s ease 0s;
+    transition: none 0s ease 0s;
+  }
 }
 /*# sourceMappingURL=index.css.map */

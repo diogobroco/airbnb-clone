@@ -1,0 +1,327 @@
+.mid__section {
+  padding-left: 24px;
+  padding-right: 24px;
+  left: 150px;
+  position: absolute;
+  text-align: left;
+  top: 13px;
+  width: 65%;
+  z-index: 101;
+}
+
+.mid__form {
+  padding-bottom: 16px;
+  z-index: 3;
+
+  @include media(">tablet", "<=935px" ) {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    width: 65%;
+    font-weight: 500;
+  }
+}
+
+.search__form {
+  margin: 0 auto;
+  max-width: 850px;
+}
+
+.top__searchbar {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  font-size: 14px;
+  font-weight: 900;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+.search__places {
+  padding-right: 20px;
+  cursor: pointer;
+
+  h4 {
+    font-weight: 600;
+
+    @include media(">=935px", "<=1130px" ) {
+      font-weight: 500;
+      font-size: 13px;
+    }
+  }
+}
+
+.search__experiences {
+  padding-right: 20px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+
+  // &:hover {
+  //   content: "";
+  //   display: block;
+  //   margin: 0 auto;
+  //   width: 10%;
+  //   padding-top: 5px;
+  //   border-bottom: 1px solid black;
+  // }
+
+
+  h4 {
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+
+    &:hover {
+      color: rgb(194, 194, 194);
+    }
+
+    @include media(">=935px", "<=1130px" ) {
+      font-weight: 500;
+      font-size: 13px;
+    }
+  }
+}
+
+.search__online {
+  padding-right: 20px;
+  cursor: pointer;
+  display: inline-block;
+
+  h4 {
+    font-weight: 600;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: rgb(194, 194, 194);
+    }
+
+    @include media(">=935px", "<=1130px" ) {
+      font-weight: 500;
+      font-size: 13px;
+    }
+  }
+}
+
+.bottom__searchbar {
+  border: 1px solid #DDDDDD;
+  border-radius: 32px;
+  background-color: #fff;
+  display: flex;
+  height: 66px;
+  position: relative;
+  width: 100%;
+  box-shadow: 0px 16px 32px rgb(0, 0, 0 / 15%), 0px 3px 8px rgb(0, 0, 0 / 10%);
+}
+
+.form__searchbar {
+  display: flex;
+  flex: 1 1 0%;
+  min-width: 0px;
+  pointer-events: auto;
+
+  @include media(">=950px" ) {
+    flex: 1.5 0 0%;
+  }
+}
+
+// LOCATION
+
+.search__location {
+  flex: 1.5 0 0%;
+}
+
+.search_location_form {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex: 1 0 0%;
+  margin: -1px;
+  min-width: 0px;
+}
+
+.search_location_query {
+  cursor: pointer;
+  display: block;
+  border: 1px solid transparent;
+  border-radius: 32px;
+  flex: 1 0 0%;
+  min-width: 0px;
+  padding-bottom: 4px;
+}
+
+.search_location_box {
+  position: relative;
+  z-index: 1;
+  padding-left: 30px;
+  padding-top: 14px;
+}
+
+.search_location_text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding-bottom: 2px;
+}
+
+.search_location_input {
+  display: block;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #222222;
+  outline: none;
+}
+
+.search_horizontal_border {
+  align-self: center;
+  border-right: 1px solid #DDDDDD;
+  flex: 0 0 0px;
+  height: 32px;
+}
+
+// CHECK IN
+
+.form_search_checkin_checkout {
+  display: flex;
+  flex: 2 0 0%;
+  min-width: 0px;
+}
+
+.search_checkin_box {
+  align-items: center;
+  flex: 1 0 0%;
+  margin: -1px;
+  min-width: 0px;
+  position: relative;
+}
+
+.search_checkin_info {
+  padding: 14px 24px;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 1;
+}
+
+.checkin_text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 800;
+  padding-bottom: 2px;
+}
+
+.checkin_dates {
+  font-size: 14px;
+  line-height: 18px;
+  color: #717171;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+// CHECK OUT
+
+.search_checkout_box {
+  display: flex;
+  align-items: center;
+  flex: 1 0 0%;
+  margin: -1px;
+  min-width: 0px;
+  position: relative;
+}
+
+.search_checkout_info {
+  padding: 14px 24px;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 1;
+}
+
+.checkout_text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 800;
+  padding-bottom: 2px;
+}
+
+.checkout_dates {
+  font-size: 14px;
+  line-height: 18px;
+  color: #717171;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+// ADD GUESTS AND SEARCH
+
+.form_add_search_guests {
+  align-items: center;
+  display: flex;
+  margin: -1px;
+  min-width: 0px;
+  position: relative;
+  flex: 0.95 0 auto;
+}
+
+.search_add_guests {
+  padding: 14px 24px;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 1;
+}
+
+.search_icon_form {
+  flex: 0 0 auto;
+  margin-left: -6px;
+  padding-right: 9px;
+  position: relative;
+  z-index: 5;
+}
+
+.search_icon_field {
+  background: rgb(255, 56, 92);
+  border: 0px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px;
+  outline: none;
+  overflow: hidden;
+  padding: 0px;
+  text-decoration: none;
+  border-radius: 24px;
+  height: 48px;
+  position: relative;
+  vertical-align: middle;
+  z-index: 0;
+
+  @include media(">=950px" ) {
+    max-width: 200px;
+    transition: none 0s ease 0s;
+  }
+}

@@ -14,7 +14,9 @@ function Header() {
       {/* RIGHT */}
       <div className="user__menu">
         <div className="host__menu">
-          <h3>Become a Host</h3>
+          <div className="become__host">
+            <h3>Become a Host</h3>
+          </div>
           <LanguageIcon fontSize="small" className="language__icon"/> 
         </div>
         <div className="login__menu">
